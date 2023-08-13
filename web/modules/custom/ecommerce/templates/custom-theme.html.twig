@@ -1,0 +1,19 @@
+<ul>
+	{% for product in products %}
+		<li>
+			<strong>{{ product.title }}</strong>
+		</li>
+		<li>
+			Price :₹
+			{{ product.price }}
+		</li>
+		<img src="{{ product.image }}" alt="{{ product.title }}"/>
+		<li>
+			{{ product.description }}
+		</li>
+		<li>
+			About:
+			{{ product.category }}
+		</li>
+	{% endfor %}
+</ul>

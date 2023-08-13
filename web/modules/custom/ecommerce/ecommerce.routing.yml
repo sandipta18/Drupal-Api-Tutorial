@@ -1,0 +1,7 @@
+ecommerce.example:
+  path: '/ecommerce'
+  defaults:
+    _title: 'Products'
+    _controller: '\Drupal\ecommerce\Controller\EcommerceController::build'
+  requirements:
+    _permission: 'access content'

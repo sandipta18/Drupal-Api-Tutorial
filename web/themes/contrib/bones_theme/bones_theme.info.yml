@@ -1,0 +1,35 @@
+name: Bones Theme
+description: Bones Drupal 9/10 Theme
+type: theme
+base theme: classy
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - classy:classy
+  - color:color
+
+libraries:
+  - bones_theme/global-css
+  - bones_theme/global-js
+  - bones_theme/color
+
+ckeditor5-stylesheets: false
+
+# Regions
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  mobilenav: 'Mobile Navigation'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
+
+
+
+# Information added by Drupal.org packaging script on 2023-03-02
+version: '2.1.0'
+project: 'bones_theme'
+datestamp: 1677729641

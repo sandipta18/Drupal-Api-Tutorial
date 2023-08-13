@@ -1,0 +1,14 @@
+{
+    "name": "drupal/bones_theme",
+    "description": "A bare bones them for Drupal.",
+    "type": "drupal-theme",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/bones_theme",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/bones_theme"
+    },
+    "require": {
+        "drupal/classy": "^1.0",
+        "drupal/color": "^1.0"
+    }
+}

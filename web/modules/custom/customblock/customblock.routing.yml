@@ -1,0 +1,7 @@
+customblock.example:
+  path: '/customblock/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\customblock\Controller\CustomblockController::build'
+  requirements:
+    _permission: 'access content'

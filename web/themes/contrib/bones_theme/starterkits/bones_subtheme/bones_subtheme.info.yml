@@ -1,0 +1,31 @@
+name: Bones Subtheme
+description: Bones Drupal 9/10 custom subtheme
+type: theme
+base theme: bones_theme
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - bones_theme:bones_theme
+
+libraries:
+  - bones_subtheme/global-css
+  - bones_subtheme/global-js
+  - bones_subtheme/color
+
+# Regions
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  mobilenav: 'Mobile Navigation'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
+
+
+# Information added by Drupal.org packaging script on 2023-03-02
+version: '2.1.0'
+project: 'bones_theme'
+datestamp: 1677729641

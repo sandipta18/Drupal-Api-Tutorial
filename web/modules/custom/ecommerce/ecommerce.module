@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for ecommerce module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function ecommerce_page_attachments_alter(array &$attachments) {
+  $attachments['#attached']['library'][] = 'ecommerce/ecommerce_api_js';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ecommerce_theme($existing, $type, $theme, $path)
+{
+  return [
+    'products_list' => [
+      'variables' => ['products' => []],
+      'template' => 'custom-theme', // Twig template file name without the .html.twig extension
+    ],
+  ];
+}
+
