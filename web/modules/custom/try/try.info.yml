@@ -1,0 +1,5 @@
+name: 'Test'
+type: module
+description: 'Add slick slider to template.'
+package: Custom
+core_version_requirement: ^10

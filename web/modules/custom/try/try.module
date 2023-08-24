@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * This file is used for implementing hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function try_theme($existing, $type, $theme, $path) {
+  return [
+    'home_page' => [
+      'variables' => [
+        'images' => [],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function try_views_pre_render(\Drupal\views\ViewExecutable $view) {
+  if ($view->id() == 'products') {
+    $library = 'try/slick';
+    $view->element['#attached']['library'][] = $library;
+  }
+}
+
